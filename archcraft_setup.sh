@@ -1,5 +1,12 @@
 #!/bin/bash
 
+display_welcome_message(){
+  echo ########################################################
+  echo Archcraft quick setup script
+  echo by WeeXnes
+  echo ########################################################
+}
+
 snap_download(){
   git clone https://aur.archlinux.org/snapd.git
   cd snapd
@@ -75,7 +82,7 @@ gaming_meta(){
 
 
 
-
+display_welcome_message
 install_packages_mandatory
 install_packages_optional
 snap_download
