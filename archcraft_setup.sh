@@ -1,10 +1,10 @@
 #!/bin/bash
 
 display_welcome_message(){
-  echo ########################################################
+  echo ------------------------------
   echo Archcraft quick setup script
   echo by WeeXnes
-  echo ########################################################
+  echo ------------------------------
 }
 
 snap_download(){
@@ -20,7 +20,7 @@ install_packages_mandatory(){
   sudo pacman -S wget go base-devel
 }
 
-install_packages_optional_pacman(){
+install_packages_optional(){
   sudo pacman -S steam discord spotify-launcher
 }
 
