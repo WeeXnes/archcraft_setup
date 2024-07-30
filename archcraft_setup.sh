@@ -17,7 +17,7 @@ snap_download(){
 }
 
 install_packages_mandatory(){
-  sudo pacman -S wget go base-devel
+  sudo pacman -S wget go base-devel playerctl
 }
 
 install_packages_optional(){
