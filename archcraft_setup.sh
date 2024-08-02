@@ -21,6 +21,8 @@ install_packages_mandatory(){
 }
 
 install_packages_optional(){
+  sudo bash -c 'echo -e "\n[multilib]\nInclude = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf'
+  sudo pacman -Syu
   sudo pacman -S steam discord spotify-launcher
 }
 
