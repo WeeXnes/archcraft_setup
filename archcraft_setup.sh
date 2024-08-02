@@ -46,12 +46,6 @@ archcraft_patches(){
   cd ..
 }
 
-secure_boot () {
-  echo enabling secureboot...
-  wget https://gist.githubusercontent.com/WeeXnes/97768d9d0a94696d83342d6cfb9018e2/raw/f4c976cedfbc7d31ff3d69ff9f2481ed2dabf8ef/secureboot_installer.sh -O secureboot_installer.sh
-  chmod +x ./secureboot_installer.sh
-  ./secureboot_installer.sh
-}
 
 rust_download(){
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -73,14 +67,13 @@ nodejs_download(){
 
 btop_download(){
   sudo snap install btop
+  sudo snap install btop
 }
 rquickshare_download(){
   wget https://github.com/Martichou/rquickshare/releases/download/v0.10.2/r-quick-share_0.10.2_amd64.snap -O rquickshare.snap
   snap install --dangerous rquickshare.snap
 }
-gaming_meta(){
-  yay arch-gaming-meta
-}
+
 
 
 
@@ -94,5 +87,3 @@ rust_download
 nodejs_download
 btop_download
 rquickshare_download
-#gaming_meta
-#secure_boot
